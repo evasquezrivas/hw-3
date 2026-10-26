@@ -1,1 +1,84 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Untitled</title>
+  </head>
+  
+  <style>
+    
+    body {
+      margin: 0;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    
+    h1, h2, h3 {
+      text-transform: uppercase;
+      font-size: 120px;
+      font-weight: 900;
+      position: absolute;
+      left: 30px;
+      color: white;
+      font-family: 'Arial Black';
+      margin: 0;
+      overflow: hidden;
+      z-index: 1;
+      line-height: 0.86;
+    }
+    
+   h1 {
+      top: 80px;
+     z-index: 3;
+    }
+    h2 {
+      top: 210px;
+      z-index: 1;
+    }
+    h3 {
+      top: 340px;
+      z-index: 3;
+    }
+    
+    .poster{
+      position: relative;
+      overflow: hidden;
+      width: 440px;
+      height: 500px;
+      background-color: hsl(0, 0%, 16%);
+    }
+    
+    .poster::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      background-image: 
+        linear-gradient(to right, white 1.5px, transparent 1px),
+        linear-gradient(to bottom, white 1.5px, transparent 1px);
+      background-size: 25% 25%;
+      background-repeat: repeat;
+    }
+    
+    .model img{
+      position: absolute;
+      width: 499px;
+      right: -200px;
+      bottom: -65px;
+      z-index: 2;
+    }
+  
+  </style>
+  
+  <body>
+   <section class="poster">
+      <h1> COLO </h1>
+      <h2> RF </h2> 
+      <h3> MODE </h3>
+      <div class="model"> <img src="https://static.vecteezy.com/system/resources/thumbnails/056/749/916/small/wonderful-minimalist-colorful-3d-geometric-shapes-abstract-background-detailed-png.png" alt="abstract 3d model">
+     </div>
+     <div class="o"></div>
+    </section>
+  </body>
+</html>
