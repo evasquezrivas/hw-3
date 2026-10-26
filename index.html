@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Untitled</title>
+    <title>Colorful poster</title>
   </head>
   
   <style>
@@ -9,17 +9,17 @@
     body {
       margin: 0;
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       display: flex;
       align-items: center;
     }
     
     h1, h2, h3 {
       text-transform: uppercase;
-      font-size: 120px;
+      font-size: 150px;
       font-weight: 900;
       position: absolute;
-      left: 30px;
+      left: 110px;
       color: white;
       font-family: 'Arial Black';
       margin: 0;
@@ -29,23 +29,23 @@
     }
     
    h1 {
-      top: 80px;
+      top: 110px;
      z-index: 3;
     }
     h2 {
-      top: 210px;
+      top: 280px;
       z-index: 1;
     }
     h3 {
-      top: 340px;
+      top: 460px;
       z-index: 3;
     }
     
     .poster{
       position: relative;
       overflow: hidden;
-      width: 440px;
-      height: 500px;
+      width: 100vw;
+      height: 100vh;
       background-color: hsl(0, 0%, 16%);
     }
     
@@ -55,18 +55,34 @@
       inset: 0;
       z-index: 3;
       background-image: 
-        linear-gradient(to right, white 1.5px, transparent 1px),
-        linear-gradient(to bottom, white 1.5px, transparent 1px);
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px);
       background-size: 25% 25%;
       background-repeat: repeat;
     }
     
     .model img{
       position: absolute;
-      width: 499px;
-      right: -200px;
-      bottom: -65px;
+      width: 690px;
+      left: 210px;
+      top: 155px;
       z-index: 2;
+    }
+    
+    .o {
+      position: absolute;
+      top: 450px;
+      left: 235px;
+      width: 160px;
+      z-index: 4;
+    }
+    
+    .sphere {
+      position: absolute;
+      top: 190px;
+      left: 345px;
+      width: 140px;
+      z-index: 4;
     }
   
   </style>
@@ -78,7 +94,8 @@
       <h3> MODE </h3>
       <div class="model"> <img src="https://static.vecteezy.com/system/resources/thumbnails/056/749/916/small/wonderful-minimalist-colorful-3d-geometric-shapes-abstract-background-detailed-png.png" alt="abstract 3d model">
      </div>
-     <div class="o"></div>
+    <img class="o" src="https://cdn3d.iconscout.com/3d/premium/thumb/abstract-sphere-shape-3d-icon-png-download-9645996.png" alt="Abstract sphere">
+     <img class="sphere" src="https://cdn3d.iconscout.com/3d/premium/thumb/abstract-sphere-shape-3d-icon-png-download-9645996.png" alt="Abstract sphere">
     </section>
   </body>
 </html>
